@@ -1,0 +1,22 @@
+package es.davidmoros.adventofcode2020;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Day6Test implements DayTest {
+
+    @Autowired
+    private Day6 day;
+
+    @Test
+    public void part1() {
+        assertEquals("6683", day.part1());
+    }
+
+    @Test
+    public void part2() {
+        assertEquals("3122", day.part2());
+    }
+}
